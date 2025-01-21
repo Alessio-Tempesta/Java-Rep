@@ -12,11 +12,22 @@ public class TernaryOperator {
 //Espressione_se_falsa: Se la condizione è false, viene eseguita questa espressione e il suo risultato diventa
 // il valore dell'intera espressione ternaria.
 
-        int score = 50;
+//        int score = 50;
+//
+//        String passOrFail = (score >= 60) ? "PASS" : "FAIL";
+//
+//        System.out.println(passOrFail);
 
-        String passOrFail = (score >= 60) ? "PASS" : "FAIL";
+//        int num = 3;
+//
+//        String evenOrOdd = (num % 2 == 0) ? "Even" : "Odd";
+//        System.out.println(evenOrOdd);
 
-        System.out.println(passOrFail);
+        int income = 40000;
+
+        double taxRate = (income >= 40000) ? 0.25 : 0.15;
+
+        System.out.println(taxRate);
 
     }
 }
