@@ -16,12 +16,15 @@ public class Methods {
 
 //        Method => sono dei blocchi di codice che possono essere eseguti e riutilizzati tramite delle chiamate => ()
 
-        String name "Bro";
+        String name = "Lexoooo";
         int age = 25;
 
-
+        happyBirthday(name, age);
     }
-    static void happyBirthday(){
-
+    static void happyBirthday(String name, int age){
+        System.out.println("Happy birthday to you!");
+        System.out.printf("Happy birthday dear %s!", name);
+        System.out.printf("You are %d years old!! \n", age);
+        System.out.println("Happy birthday to you!\n");
     }
 }
