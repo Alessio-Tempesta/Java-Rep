@@ -27,13 +27,16 @@ public class BankingProgram {
 
             switch (choice){
                 case 1 -> showBalance(balance);
-                case 2 -> balance = balance += deposit();
-                case 3 -> System.out.println(" WITHDRAW ");
+                case 2 -> balance += deposit();
+                case 3 -> balance -= withdraw(balance);
                 case 4 -> isRunning = false;
                 default -> System.out.println("INVALID CHOICE");
             }
         }
 
+        System.out.println("***************************");
+        System.out.println("Thank you! have a nice day!");
+        System.out.println("***************************");
 
 //        Declare Varibales
 //        Get and Process user choice
@@ -58,6 +61,24 @@ public class BankingProgram {
 
         if (amount < 0){
             System.out.println("Amount can't be negative :");
+            return 0;
+        }
+        else {
+            return amount;
+        }
+    }
+    static double withdraw(double balance){
+
+        double amount;
+        System.out.println("Enter amount to be withdraw");
+        amount = scanner.nextDouble();
+
+        if (amount > balance){
+            System.out.println("INSUFFICIENT FUNDS");
+            return 0;
+        }
+        else if (amount < 0) {
+            System.out.println("Amount can't be negative");
             return 0;
         }
         else {
