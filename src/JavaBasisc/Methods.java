@@ -14,17 +14,52 @@ package JavaBasisc;
 public class Methods {
     public static void main(String[] args) {
 
-//        Method => sono dei blocchi di codice che possono essere eseguti e riutilizzati tramite delle chiamate => ()
+        System.out.println(square(3));
+        System.out.println(cube(3));
+        String fullName = getFullName("Alessio", "Tempesta");
+        System.out.println(fullName);
 
-        String name = "Lexoooo";
-        int age = 25;
+        int age = 17;
+        if(ageCheck(age)){
+            System.out.println("You may sign up!");
+        }
+        else {
+            System.out.println("You must be 18+ to sign up ");
+        }
 
-        happyBirthday(name, age);
+
     }
     static void happyBirthday(String name, int age){
-        System.out.println("Happy birthday to you!");
-        System.out.printf("Happy birthday dear %s!", name);
-        System.out.printf("You are %d years old!! \n", age);
-        System.out.println("Happy birthday to you!\n");
+
     }
+    static double square(double number){
+        return number * number;
+    }
+    static double cube(double num){
+        return num * num * num;
+    }
+    static String getFullName(String first, String last){
+        return first + " " + last;
+    }
+    static boolean ageCheck(int age){
+        if (age >= 18){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
 }
+//        Method => sono dei blocchi di codice che possono essere eseguti e riutilizzati tramite delle chiamate => ()
+
+//        String name = "Lexoooo";
+//        int age = 25;
+//        happyBirthday(name, age);
+
+//    }
+//    static void happyBirthday(String name, int age){
+//System.out.println("Happy birthday to you!");
+//        System.out.printf("Happy birthday dear %s!", name);
+//        System.out.printf("You are %d years old!! \n", age);
+//        System.out.println("Happy birthday to you!\n");
