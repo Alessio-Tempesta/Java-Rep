@@ -9,7 +9,7 @@
 //evitando di riscrivere lo stesso codice più volte.
 //Modularità: Ogni metodo si concentra su un singolo compito, rendendo il codice più modulare e facile da testare.
 
-package JavaBasisc;
+package Methods;
 
 public class Methods {
     public static void main(String[] args) {
