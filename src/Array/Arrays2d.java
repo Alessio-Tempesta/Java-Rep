@@ -11,5 +11,20 @@ public class Arrays2d {
 //righe: Numero di righe.
 //colonne: Numero di colonne.
 
+
+        String[] fruits = {"apple", "orange", "banana"};
+        String[] vegetables = {"potato", "onion", "carrot"};
+        String[] meats = {"chicken","pork", "beef", "fish"};
+
+        String[][] groceries = {{"apple", "orange", "banana"},
+                                {"potato", "onion", "carrot"},
+                                {"chicken","pork", "beef", "fish"}};
+
+        for (String [] foods : groceries){
+            for (String food : foods){
+                System.out.print(food + " ");
+            }
+            System.out.println();
+        }
     }
 }
