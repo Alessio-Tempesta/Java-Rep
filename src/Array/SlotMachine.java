@@ -11,8 +11,12 @@ public class SlotMachine {
         int bet;
         int payout;
         String[] row;
+        System.out.println("**************************");
+        System.out.println("  Welcome to Java Slots   ");
+        System.out.println("Symbols : 🍒 🍉 🍋 🔔 ⭐ ");
+        System.out.println("**************************");
 
-        System.out.println();
+
         // Declare Variables
         // Display Welcome Message
         // Paly if Balance > 0
