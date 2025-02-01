@@ -1,4 +1,6 @@
 package Array;
+import java.sql.SQLOutput;
+import java.util.Random;
 import java.util.Scanner;
 
 public class SlotMachine {
@@ -46,7 +48,7 @@ public class SlotMachine {
 
         //  Spin Row
         System.out.println("Spinning...");
-        spinRow();
+        row =spinRow();
 
 
 
@@ -55,12 +57,19 @@ public class SlotMachine {
     //  get payOut
     //  Ask >To play Again
     //  Display Exit Message
+        scanner.close();
     }
     static String[] spinRow(){
 
         String[] symbols = {"🍒" ,"🍉" ,"🍋", "🔔", "⭐ "};
         String[] row = new String[3];
+        Random random = new Random();
 
-        return new String[0];
+        System.out.println(symbols[random.nextInt(symbols.length)]);
+
+        for (int i = 0; i < 3; i++){
+            row[i] = symbols[random.nextInt(symbols.length)];
+        }
+        return row;
     }
 }
