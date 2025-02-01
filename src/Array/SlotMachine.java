@@ -7,26 +7,36 @@ public class SlotMachine {
 //        Java Slot Machine
 
         Scanner scanner = new Scanner(System.in);
+        // Declare Variables
         int balance = 100;
         int bet;
         int payout;
         String[] row;
+
+        // Display Welcome Message
         System.out.println("**************************");
         System.out.println("  Welcome to Java Slots   ");
         System.out.println("Symbols : 🍒 🍉 🍋 🔔 ⭐ ");
         System.out.println("**************************");
 
+        // Pay if Balance > 0
+        // Enter Bet Amount
         while (balance > 0){
             System.out.println("Current Balance : €" +balance);
             System.out.println("Place your bet amount: ");
             bet = scanner.nextInt();
 
+
             if (bet > balance){
                 System.out.println("Insufficent Funds ");
                 continue;
             }
+
+            //Verify If Bet > Balance
+            //  Verify If Bet > 0
             else if (bet <= 0) {
                 System.out.println("Bet Must be grater Than 0 ");
+                //  Substarct Bet From Balance
             }
             else {
                 balance -= bet;
@@ -34,18 +44,23 @@ public class SlotMachine {
             }
         }
 
+        //  Spin Row
+        System.out.println("Spinning...");
+        spinRow();
 
-        // Declare Variables
-        // Display Welcome Message
-        // Paly if Balance > 0
-        // Enter Bet Amount
-    //  Verify If Bet > Balance
-    //  Verify If Bet > 0
-    //  Substarct Bet From Balance
-    //  Spin Row
+
+
+
     //  Print Row
     //  get payOut
     //  Ask >To play Again
     //  Display Exit Message
+    }
+    static String[] spinRow(){
+
+        String[] symbols = {"🍒" ,"🍉" ,"🍋", "🔔", "⭐ "};
+        String[] row = new String[3];
+
+        return new String[0];
     }
 }
